@@ -20,7 +20,7 @@ $("#selector").Zoom({
 # Roadmap
 - Add an option to allow scrollbar zooming
 - Add smooth zoom animations
-- 
+
 # Contributing
 Go for it.
 Fork, Add, Pull Request.
