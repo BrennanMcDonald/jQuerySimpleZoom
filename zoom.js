@@ -42,6 +42,7 @@
             if (options.in !== null){
                 if (typeof(options.in) === "number"){
                     options.in = options.in;
+<<<<<<< HEAD
                 } else if (typeof(options.in) === "string"){
 					if (options.in.toUpperCase().charCodeAt(0) >= 65 && options.in.toUpperCase().charCodeAt(0) <= 90){
 						options.in = options.in.toUpperCase().charCodeAt(0);
@@ -49,11 +50,20 @@
 						options.in = KEYS[options.in.toUpperCase()];
 					}
                 }
+=======
+                } else if (typeof(options.in) === "string" && options.in.length < 2){
+                    options.in = options.in.toUpperCase().charCodeAt(0);
+                } else {
+					options.in = KEYS[options.in.toUpperCase()];
+
+				}
+>>>>>>> origin/master
 
             }
             if (options.out !== null){
                 if (typeof(options.out) === "number"){
                     options.out = options.out;
+<<<<<<< HEAD
                 } else if (typeof(options.out) === "string"){
 					if (options.out.toUpperCase().charCodeAt(0) >= 65 && options.out.toUpperCase().charCodeAt(0) <= 90){
 						options.out = options.out.toUpperCase().charCodeAt(0);
@@ -61,6 +71,13 @@
 						options.out = KEYS[options.out.toUpperCase()];
 					}
                 }
+=======
+                } else if (typeof(options.out) === "string" && options.in.length < 2){
+                    options.out = options.out.toUpperCase().charCodeAt(0);
+                } else {
+					options.out = KEYS[options.out.toUpperCase()];
+				}
+>>>>>>> origin/master
 
             }
         }
